@@ -21,24 +21,24 @@ else:
 
 
 # weight converter
+unit = input("Choose your weight between kg or lb: ").strip().upper()
 weight = float(input("Enter your weight: "))
-unit = input("Enter your weight in (kg/lb): ")
 
-if unit == "kg":
+if unit == "KG":
     weight = weight * 2.20
     unit = "lb"
-    print(f"Weight is: {round(weight,1)} {unit}")
-elif unit == "lb":
+    print(f"Your Weight is: {round(weight,1)} {unit}")
+elif unit == "LB":
     weight = weight / 2.20
     unit = "kg"
-    print(f"Weight is: {round(weight,1)} {unit}")
+    print(f"Your Weight is: {round(weight,1)} {unit}")
 else:
     print(f"{unit} is not valid unit!")
 
 
 # Temperature meter
 temp = float(input("Enter your temperature: "))
-unit = input("Enter your temperature in Celsius or Fahrenheit (C/F): ").strip().upper()
+unit = input("Enter your temperature in Celsius or Fahrenheit (C/F): ")
 
 if unit == "C":
     temp = (temp * 9/5) + 32
@@ -83,4 +83,8 @@ elif age < 0:
     print("Invalid age!")
 else:
     print("You are not a voter!")
+    
+
+
+
     
