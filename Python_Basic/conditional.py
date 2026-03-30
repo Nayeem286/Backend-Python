@@ -21,14 +21,14 @@ else:
 
 
 # weight converter
-unit = input("Choose your weight between kg or lb: ").strip().upper()
+unit = input("Choose weight between Kilogram or Pounds (K or L): ").strip().upper()
 weight = float(input("Enter your weight: "))
 
-if unit == "KG":
+if unit == "K":
     weight = weight * 2.20
     unit = "lb"
     print(f"Your Weight is: {round(weight,1)} {unit}")
-elif unit == "LB":
+elif unit == "L":
     weight = weight / 2.20
     unit = "kg"
     print(f"Your Weight is: {round(weight,1)} {unit}")
