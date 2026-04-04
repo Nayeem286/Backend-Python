@@ -1,6 +1,23 @@
-name = "Nayeem"
-age = 25
-print(f"my name is {name} and I'm {age} years old")
+# Searching & Checking method
+
+#find() 
+text = "Hello, my name is Nayeem. I live in germany"
+print(text.find("n")) #First n is found in 10th index.
+print(text.find("Nayeem")) # Nayeem is found in 18th index.
+print(text.find("e",10,24))#output is 13.Bcz from 10-24 index the 1st "e" found in 13th index.
+print(text.find("X")) #not available. so -1.
+
+#index()
+print(text.index("n")) #First n is found in 10th index.
+print(text.index("Nayeem")) # Nayeem is found in 18th index.
+print(text.index("e",10,24))#output is 13.Bcz from 10-24 index the 1st "e" found in 13th index.
+#print(text.index("X")) #Exceptional error
+
+#isdigit()
+digit = "nayeem"
+digit1 = "123456"
+print(digit.isdigit())#false because string
+print(digit1.isdigit())#true because int
 
 
 #string methods
@@ -76,6 +93,9 @@ else:
 text2 = "Hi, my name is nayeem"
 print(text2.startswith("bye"))
 print(text2.startswith("Hi"))
+#print(text2.startswith("hi","Hi"))
 print(text2.startswith("my",4,7))
 
 #endwith()
+
+

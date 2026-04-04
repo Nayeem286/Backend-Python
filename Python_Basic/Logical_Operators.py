@@ -1,13 +1,5 @@
 
-is_admin = True
-is_banned = False
-
-if is_admin and not is_banned:
-    print("Access to admin panel granted")
-else:
-    print("Access denied")
-
-
+"""
 #Food panda app
 is_premium_user = True
 discount = int(input("Enter order amount: "))
@@ -112,3 +104,32 @@ else:
     
 final_price = total_cost - discount
 print(f'Your bill after discount:{final_price} taka')
+"""
+
+
+
+
+
+
+
+#Ternary operator
+
+"""
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
+
+number = "x is greater" if x > y else "y is greater"
+print(number)
+
+"""
+
+user_type = "admin"
+Total_bill = 2000
+
+discount =   Total_bill * 0.1  if user_type == "student" or user_type == "admin" or user_type == "MP" and Total_bill >= 1500 else Total_bill
+final_bill = Total_bill - discount
+print("Your bill after discount: ",final_bill)
+
+age = int(input("Enter your age: "))
+election = "You can vote" if age >= 18 else "You can't vote"
+print("Your election status:",election)
