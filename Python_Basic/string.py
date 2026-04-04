@@ -96,6 +96,6 @@ print(text2.startswith("Hi"))
 #print(text2.startswith("hi","Hi"))
 print(text2.startswith("my",4,7))
 
-#endwith()
+
 
 
